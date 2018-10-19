@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FormatoTabla</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            border-bottom: 1px solid #777;
+            padding: 5px 20px;
+        }
+        
+        /*Primera fila*/
+        tr:first-child td{
+            background: #444;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        /*Filas  impares*/
+        tr:nth-child(odd) td{
+            background: white;
+        }
+        
+        /*Primera Columna*/
+        td:nth-child(1){
+            font-weight: bold;
+        }
+        
+        tr:nth-child(3) td:nth-child(4){
+            background-color: red;
+        }
+        tr:hover td{
+            background: yellow;
+        }
+    
+    </style>
+</head>
+<body>
+   <table border=1>
+      <tr>
+          <th>Nombre</th>
+          <th>Apellidos</th>
+          <th>Telefono</th>
+          <th>Ciudad</th>
+          
+      </tr>
+      <tr>
+          <td>Alejandro</td>
+          <td>.....</td>
+          <td>666666666</td>
+          <td>Madrid</td>
+          
+      </tr>
+      <tr>
+          <td>Perico</td>
+          <td>Palotes</td>
+          <td>343614316</td>
+          <td>VillaBotija</td>
+          
+      </tr>
+      <tr>
+          <td>Rogelio</td>
+          <td>Perico</td>
+          <td>123456987</td>
+          <td>Artosopa</td>
+          
+      </tr>
+    </table>
+   
+    
+</body>
+</html>

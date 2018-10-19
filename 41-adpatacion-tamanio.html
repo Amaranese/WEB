@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Design: Adaptación al dispositivo</title>
+  
+  <style>
+  /*** Reglas para todos los dispositivos ***/
+  
+    body {
+      font-family: sans-serif;
+    }
+    
+    
+    /*** Pantallas grandes ***/
+    @media screen and (min-width:1000px){
+      body {
+        background: #eee;
+        color: #222;
+        font-size: 1.1rem;
+        font-family: "Cambria";
+      }
+
+      .multimedia {
+        width: 50%;
+        float: left;
+        margin-right: 10px;
+      }
+      .anuncio {
+        text-align: center;
+      }
+    }
+    
+    
+    /*** Pantallas Pequeñas ***/
+    @media screen and (max-width:1000px){  
+      body {
+        background: white;
+        color: black; /* aumentamos contaraste */
+        font-size: 0.9rem;
+        font-family: "verdana";
+      }
+      .anuncio {
+        display: none;
+      }
+      .multimedia {
+        width: 100%;
+      }      
+    } 
+  
+  </style>
+  
+</head>
+<body>
+  <h1>Responsive Design: Adaptación al dispositivo</h1>
+  
+  <p class="anuncio">  <img src="anuncio.gif" >  </p>
+  <p>Lorem ipsum <a href="http://www.cev.com">CEV</a> dolor sit amet, consectetur adipisicing elit. Voluptatem iste adipisci, magnam recusandae incidunt hic odit velit itaque libero qui, tenetur accusantium quod nulla aperiam placeat esse labore molestiae magni.</p>
+  <p>Expedita vel <a href="http://www.madrid.org">Madrid</a> consectetur maxime qui provident rerum dicta harum voluptatem ducimus officia ipsa repellendus tempora mollitia perspiciatis rem tenetur minima consequatur iusto ipsum aliquam corporis, quisquam et unde. Minus, dolor.</p>
+  <h2>Titular de tipo h2</h2>
+  
+  <img src="madrid6.jpg" class="multimedia">
+  <p>Sed iste at odio optio sapiente rerum, tempora laborum autem, error, hic quis possimus atque illo iure reiciendis repellendus consequuntur dolores! Unde numquam praesentium quisquam voluptatem doloremque mollitia. Dolor, sunt.</p>
+  <p>Vel, nam. Ab officia, iusto fuga esse repudiandae asperiores officiis cumque quae culpa porro. Laboriosam impedit quod quia distinctio consectetur. Accusamus error quia est temporibus. Nisi voluptatum consectetur temporibus eligendi.</p>
+  <p>Quia adipisci, optio fuga esse! Repudiandae corporis tempore ea quo sed reiciendis, cumque commodi iure, facilis iusto voluptas illum similique nostrum quaerat inventore ducimus debitis aliquam officiis. Ex, quam, rem.</p>
+  <p>Ad officia laborum recusandae cupiditate quas ipsam alias, impedit soluta ab. Blanditiis ex, fugiat quia placeat amet, totam atque reprehenderit quae adipisci facilis vitae aperiam deserunt praesentium impedit, odio voluptatibus!</p>
+  
+  <p>Commodi impedit reprehenderit minus quis odio omnis sit provident. Inventore sint, odit nihil earum repudiandae molestias quos excepturi tenetur porro doloremque debitis dolore, quam voluptatem consectetur corporis dolores et repellendus.</p>
+  <h2>Titular de tipo h2</h2>
+  <p>Totam laborum voluptas quis id repellendus facilis necessitatibus velit dolorum temporibus laboriosam consequatur sed, nam distinctio illo asperiores omnis consequuntur ex aut explicabo quisquam accusantium, odit eligendi! Similique, sit, soluta!</p>
+  
+  <iframe class="multimedia" height="315" src="https://www.youtube.com/embed/EiY5_7CdEnc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  
+  <p>Possimus sit, vel praesentium obcaecati repellat dolore illum reprehenderit quia nostrum expedita placeat reiciendis voluptatum ducimus esse enim beatae rerum libero eaque, modi dignissimos aut. Id, laborum aspernatur praesentium delectus.</p>
+  <p>Dolorem perspiciatis, perferendis dolorum omnis saepe facilis sit inventore vero sapiente sint sed aliquid possimus animi odio rem illum hic! Dolorem placeat nostrum quos perspiciatis non tempora perferendis? Adipisci, quibusdam.</p>
+  <p>Fuga fugit rerum qui, aspernatur adipisci minus amet, voluptatem harum tenetur nam officia distinctio ex molestias sequi odio in error consectetur autem animi natus placeat. Magni optio amet esse, eum!</p>
+  <p>Voluptas libero alias voluptatibus sapiente necessitatibus natus ad, magni sed. Autem dolores iste quae dolor animi aliquid, saepe, enim voluptate provident totam aut delectus. Adipisci mollitia provident cum odit enim?</p>
+  
+  
+  
+  
+</body>
+</html>

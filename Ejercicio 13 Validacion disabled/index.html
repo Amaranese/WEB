@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validación Disabled</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        fieldset{
+            width: 500px;
+            height: 250px; 
+                
+        }
+    </style>
+    <script>
+	function submit_oculto(form) {
+		if ((form.nombre3.value.length == 0) || (form.apellido3.value.length == 0) || (form.edad3.value <18) || (form.edad3.value > 65)) { 
+			form.enviar3.disabled = true; 
+		}else{
+			form.enviar3.disabled = false;
+		}
+	}
+</script>
+</head>
+<body>
+  <table>
+  <fieldset>
+   <form name="formulario" method="POST" action="http://alejandromaranes.epizy.com/">
+	<p>Nombre: </p>
+	<input type="text" name="nombre3" size="20" onInput="submit_oculto(this.form)">
+	<p>Apellido: </p>
+	<input type="text" name="apellido3" size="20" onInput="submit_oculto(this.form)">
+	<p>Edad:</p>
+	<input type="number" name="edad3" size="20" onInput="submit_oculto(this.form)" min="18" max="65">
+	<br>
+	<input type="submit" name="enviar3" value="Enviar" disabled>
+      </form>
+      </fieldset>
+    </table>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+

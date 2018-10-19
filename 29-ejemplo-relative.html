@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo relative</title>
+  <style>
+    #contenedor {
+      width: 50%;
+      height: auto;
+      position:absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "calibri", sans-serif;
+    }
+    header {
+      margin: 0;
+      background:url('caratula.jpg') center center  orange ;
+      height: 250px;
+      padding-top: 50px;
+      color: white;
+      text-align: center;
+    }
+    #avatar {
+      position: relative;
+      top: 60px;
+    }
+    #avatar img {
+      border-radius: 100px;
+      border: 5px solid white;
+      box-shadow: 0 3px 9px grey;
+    }
+    main {
+      background: lavender;
+      padding: 100px 20px 20px 20px;
+    }
+    
+  </style>
+</head>
+<body>
+ 
+ <div id="contenedor">
+  
+   <header>
+     <h1>Ejemplo Relative</h1>
+     <div id="avatar">
+       <img src="imagenes/mujer.png" width="200">
+     </div>
+   </header>
+   
+   <main>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laborum eos perspiciatis, eveniet cumque voluptas nesciunt vitae explicabo, eum dolorem ad modi reiciendis, laboriosam quasi minima omnis officia incidunt nihil!</p>
+     <p>Illum dolore eos pariatur exercitationem mollitia rerum voluptatibus maiores voluptates! Dicta doloribus quae maiores, eaque voluptas magni, cumque dolore assumenda id harum, officia placeat, asperiores eligendi. Numquam veritatis, ratione consequuntur.</p>
+   </main>
+   
+ </div>
+ 
+ 
+ 
+  
+</body>
+</html>

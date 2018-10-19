@@ -1,0 +1,264 @@
+<DOCTYPE>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8">
+            <title>Ejercicio Suscripción</title>
+            <style>
+                body{
+                    background: #eee;
+                    font-family: sans-serif;
+                }
+                td{
+                    text-align: right;
+                }
+                .container{
+                    margin: 20px auto;
+                    width: 1000px;
+                    border-top: 1px solid gray;
+                    border-bottom: 1px solid gray;
+                    padding: 6px;
+                    text-align: center;
+                }
+                .container a{
+                    text-decoration: none;
+                    padding: 19px;
+                }
+                #logo{
+                    height: 240px;
+                    left: 40%;
+                    right: 50%;
+                    position: relative;
+                }
+                #lateral{
+                    position: absolute;
+                    margin-left: 1100px;
+                    margin-top:-260px;
+                    height: 400px;
+                }
+                h1{
+                    font-family: sans-serif;
+                    margin-top: 12px;
+                    margin-left: 350px;
+                    color: blue;
+                    font-size: 25px;
+                }
+                fieldset{
+                    margin-top: 100px;
+                    border: none;
+                }
+                table{
+                    margin-left: 520px;
+                }
+                .grande{
+                    height: 20px;
+                    width: 450px;
+                }
+                .mediano{
+                    height: 20px;
+                    margin-right: 225px;
+                    width: 225px;
+                }
+                .pequenio{
+                    margin-right: 338px;
+                    height: 20px;
+                    width: 112px;
+                }
+                input[type='submit']{
+                    background: #00348A;
+                    color: white;
+                    font-weight: bold;
+                    padding: 10px 30px;
+                    margin: 20px;
+                    margin-top: 90px; 
+                    margin-left: 40%;
+                    border: none;
+                }
+                input[type='checkbox']{
+                    margin-top:2px;
+                    margin-left: 28%;
+                    margin-top: 30px;
+                }
+                .container2{
+                    width: auto;
+                    height:120px;
+                    border-top: 1px solid gray;
+                    border-bottom: 1px solid gray;
+                    padding: 6px;
+                    text-align: center;
+                    background: blue;
+                    
+                }
+                .container2 a{
+                    color:white;
+                    
+                }
+                #menu2{
+                    float: left;
+                    left: 50%;
+                    list-style-type: none;
+                    margin: 0 auto;
+                    padding: 1px;
+                    position: relative;
+                }
+                #menu2 li{
+                    float: left;
+                    position: relative;
+                    right: 50%;
+                    padding: 12px;
+                }
+            </style>
+        </head>
+        <body>
+            <header><img id="logo" src="logo-Casa-Viva.png" width="254" height="200">
+            </header>
+            <br>
+            
+            <nav class="container">
+           <a href="#uno">HOME</a>
+           <a href="#dos">CASAS</a>
+           <a href="#tres">LIVING</a>
+           <a href="#cuatro">SOLUCIONES</a>
+           <a href="#cinco">CONTACTOS</a>
+           <a href="#seis">SUSCRIPCIONES Y TIENDA ONLINE</a>
+        </nav>
+            
+                
+              
+           
+            <br><br>
+            <form action="http://richart.pe.hu/mi-mail.php" method="post">
+      
+      
+       
+       
+       <table class="grande">
+         <h1>Datos de suscripción</h1>
+         <tr>
+           <td>Nombre*</td>
+           <td><input type="text" name="nombre" class="grande"  title="Nombre" autofocus required ></td>
+         </tr>
+         <tr>
+           <td>Apellidos*</td>
+           <td><input type="text" name="Apellidos" class="grande" value="" min="18" max="65" ></td>
+         </tr>
+         <tr>
+           <td>Direccion*</td>
+           <td><input type="text" name="Direccion" class="grande"  required ></td>
+         </tr>
+         <tr>
+           <td>Cod.Postal*</td>
+           <td><input type="text" name="cp" class="mediano" minlenght="5" maxlength="5" required ></td>
+         </tr>
+         <tr>
+           <td>Provincia*</td>
+             <td>
+             <select name="Provincia" class="mediano">
+             <option value="1">Álava</option>
+             <option value="2">Albacete</option>
+             <option value="3">Alicante</option>
+             <option value="4">Almería</option> 
+             <option value="5">Asturias</option>
+             <option value="6">Ávila</option>
+             <option value="7">Badajoz</option>
+             <option value="8">Barcelona</option>
+             <option value="9">Burgos</option>
+             <option value="10">Cáceres</option>
+             <option value="11">Cádiz</option>
+             <option value="12">Cantabria</option>
+             <option value="13">Castellón</option>
+             <option value="14">Ciudad Real</option>
+             <option value="15">Córdoba</option>
+             <option value="16">A Coruña</option>
+             <option value="17">Cuenca</option>
+             <option value="18">Girona</option>
+             <option value="19">Granada</option>
+             <option value="20">Guadalajara</option>
+             <option value="21">Guipuzkoa</option>
+             <option value="22">Huelva</option>
+             <option value="23">Huesca</option>
+             <option value="24">Illes Balears</option>
+             <option value="25">Jaén</option>
+             <option value="26">León</option>
+             <option value="27">Lleida</option>
+             <option value="28">Lugo</option>
+             <option value="29">Madrid</option>
+             <option value="30">Málaga</option>
+             <option value="31">Murcia</option>
+             <option value="32">Navarra</option>
+             <option value="33">Ourense</option>
+             <option value="34">Palencia</option>
+             <option value="35">Las Palmas</option>
+             <option value="36">Pontevedra</option>
+             <option value="37">La Rioja</option>
+             <option value="38">Salamanca</option>
+             <option value="39">Segovia</option>
+             <option value="40">Sevilla</option>
+             <option value="41">Soria</option>
+             <option value="42">Tarragona</option>
+             <option value="43">Santa Cruz de Tenerife</option>
+             <option value="44">Teruel</option>
+             <option value="45">Toledo</option>
+             <option value="46">Valencia</option>
+             <option value="47">Valladolid</option>
+             <option value="48">Bizkaia</option>
+             <option value="49">Zamora</option>
+             <option value="50">Zaragoza</option>
+             <option value="51">Ceuta</option>
+             <option value="52">Melilla</option>
+               </select>
+             
+         </tr>
+         
+         <tr>
+           <td>Teléfono*</td>
+           <td><input type="text" name="telefono" class="grande" placeholder="+000 000 000" autocomplete="off"/></td>
+         </tr>
+</table>
+
+<table class="grande">
+   <h1>Datos de Usuario</h1>
+   <img id="lateral" src="casaviva_205_portada_big.jpg">  
+   <tr>
+          <td>Email*</td>
+          <td><input type="email" name="email" class="grande" ></td>
+        </tr>
+
+<tr>
+           <td>Contraseña*</td>
+           <td><input type="password" name="clave" class="mediano" ></td>
+       </tr>
+       <tr>
+           <td>Confirmar*</td>
+           <td><input type="password" name="clave" class="mediano" ></td>
+       </tr>	 
+<tr>
+           <td></td>
+           <td><label><input type="checkbox" name="condiciones" value="sí" required>  Acepto las condiciones* </label><a href="#" target="_blank" >Terminos y condiciones</a></td>
+         </tr>
+         <tr>
+         	<td></td>
+         	<td><input type="submit" value="SUSCRIBIRME">
+       <input type="hidden" name="redireccion" value="http://www.revistacasaviva.es/" target="_blank">
+       <input type="hidden" name="destinatario" value="alejandro_maranes_apps1ma1718@cev.com"></td>
+         </tr>
+    
+</table>
+            </form>
+<footer id="menu2">
+    
+</footer>
+<nav class="container2" style="color: white"> 
+          <ul id="container2">
+           <a href="#siete">Contacto</a>
+           <a href="#ocho">Condiciones Generales</a>
+           <a href="#nueve">Condiciones y gastos de Envios</a>
+           <a href="#diez">Politica de privacidad</a>
+           <a href="#once">Informacion de Contacto</a>
+           </ul>
+        </nav>
+
+
+        </body>
+    </html>
+                
+            

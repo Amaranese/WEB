@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+
+    <style>
+      * {
+        font: 1.1rem sans-serif;
+      }
+      body {
+        background: #eee;
+      }
+      fieldset {
+        background: white;
+      }
+      input, textarea, select {
+        color: blue;
+        border: none;
+        border-bottom: purple 2px solid;
+        background: #eee;
+      }
+      input:focus, textarea:focus {
+       
+        box-shadow: 0 0 8px 2px red;
+      }
+      input:required {
+        border: tomato 1px solid;
+        border-bottom: purple 2px solid;
+      }
+      input[type='submit'] {
+        background: green;
+        color: white;
+        font-weight: bold;
+        padding: 10px 30px;
+        margin: 20px;
+        border: none;
+        border-radius: 80px;
+      }
+
+
+      td:first-child {
+        text-align: right;
+        vertical-align: top;
+        padding: 5px;
+      }
+
+      .pequenio {
+        width: 50px;
+      }
+      .mediano{
+        width: 200px;
+      }
+      .grande {
+        width: 100%;
+      }
+      textarea {
+        resize: none;
+      }
+
+    </style>
+
+
+
+  </head>
+  <body>
+    <h1>Formulario</h1>
+    <p>* Campos obligatorios</p>
+    <form action="http://richart.pe.hu/mostrar.php" method="get" >
+
+
+      <fieldset>
+        <legend>Datos personales</legend>
+        <table class="grande">
+          <tr>
+            <td>Nombre*</td>
+            <td><input type="text" name="nombre" class="grande" placeholder="Nombre y apellidos" title="Nombre completo con apellidos" autofocus required ></td>
+          </tr>
+          <tr>
+            <td>Edad</td>
+            <td><input type="number" name="edad" class="pequenio" value="25" min="18" max="65" ></td>
+          </tr>
+          <tr>
+            <td>Ciudad*</td>
+            <td><input type="text" name="ciudad" class="mediano" value="Madrid" required/></td>
+          </tr>
+          <tr>
+            <td>Cod. Postal*</td>
+            <td><input type="text" name="cp" class="pequenio" minlenght="5" maxlength="5" required></td>
+          </tr>
+          <tr>
+            <td>Teléfono</td>
+            <td><input type="text" name="telefono" class="mediano" autocomplete="off"/></td>
+          </tr>
+          <tr>
+            <td>Clave</td>
+            <td><input type="password" name="clave" class="pequenio"></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Pedido</legend>
+        <table class="grande">
+          <tr>
+            <td>Comentarios</td>
+            <td>
+              <textarea name="comentarios" class="mediano" rows="5" maxlength="200"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>Latas</td>
+            <td><input type="number" name="latas" class="pequenio" value="12" min="6" step="6" ></td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" class="mediano" placeholder="direccion@email.com"></td>
+          </tr>
+          <tr>
+            <td>Estudios</td>
+            <td> 
+              <label><input type="checkbox" name="eso"          value="si" checked > ESO</label> 
+              <br><label><input type="checkbox" name="bachillerato" value="si"> Bachillerato</label>
+              <br><label><input type="checkbox" name="superior"     value="si"> Superiores</label>
+              <br><label><input type="checkbox" name="otros"        value="si"> Otros</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Sexo</td> 
+            <td>
+              <label><input type="radio" name="sexo" value="mujer" checked > Mujer</label> <br>
+              <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Provincia</td>
+            <td>
+              <select name="provincia">
+                <option value="05">Ávila</option>         
+                <option value="16">Cuenca</option>           
+                <option value="28" selected>Madrid</option>
+                <option value="40">Segovia</option>
+                <option value="45">Toledo</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Color</td>
+            <td><input type="color" name="color" value="#ff0000"></td>
+          </tr>
+          <tr>
+            <td>Fotos</td>
+            <td><input type="file" name="foto" multiple accept="image/*"></td>
+          </tr>
+          <tr>
+            <td>Curriculum (solo PDF)</td>
+            <td><input type="file" name="cv" accept="application/pdf"></td>
+          </tr>
+          <tr>
+            <td>Fecha</td>
+            <td><input type="date" name="fecha" value="2018-02-25" min="2018-02-05" max="2018-03-16" class="mediano" ></td>
+          </tr>
+          <tr>
+            <td>Hora</td>
+            <td><input type="time" name="hora" value="12:15" min="10:00" max="16:45" step="900" title="Citas cada 15m desde las 10:00 hasta las 16:45" class="mediano" ></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><label><input type="checkbox" name="condiciones" value="sí" required>  Acepto* los </label><a href="#" target="_blank" >Terminos y condiciones</a></td>
+          </tr>
+
+        </table>
+      </fieldset>        
+      <center>
+        <input type="submit" value="Pagar ahora">
+      </center>
+
+
+    </form>
+
+
+  </body>
+</html>

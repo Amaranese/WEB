@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery Sintaxis</title>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script>
+    $(function(){
+      
+      /* Selector por etiqueta */
+      $('a').click(function(){
+        alert('Hola mundo');
+      });
+      
+      
+      /* Selector por atributo */
+      $('input[type="button"]').click(function(){
+        alert('¡Ola ke ase?');
+      });
+      
+      
+      /* Selector por clase */
+      $('.primero').mouseover(function(){
+        alert('¡Primero');
+      });
+      
+      
+      /* Selector por ID */
+      $('#segundo').mouseout(function(){
+        alert('Segundo');
+      });
+      
+      
+      /* Selector this */
+      $('img').click(function(){
+        $(this).hide(3000).show(500);
+      });
+      
+      
+      
+    });  
+  </script>
+  
+  
+</head>
+<body>
+ <h1>Sintaxis jQuery</h1>
+ 
+ 
+ 
+ 
+ <a href="#">Saludar</a>
+ <br>
+  
+ <input type="button" value="Haz click aqui">
+ <br>
+ <p class="primero">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa nesciunt nihil doloribus repellendus, tempora accusantium modi non obcaecati reiciendis unde iste voluptatum consequuntur recusandae consectetur est, soluta enim rem tenetur.</p>
+ <p id="segundo">Praesentium laudantium impedit laboriosam nihil, deleniti totam ad necessitatibus mollitia. Voluptatum id hic accusantium, corporis, maxime vel quod laboriosam architecto placeat ea a molestiae porro atque quae consequatur quo esse!</p>
+ <p>Perferendis nemo, repellat dolore quibusdam exercitationem maxime, ab, architecto officiis adipisci itaque voluptate! Reprehenderit temporibus numquam porro voluptas ipsam, libero saepe modi repellat exercitationem expedita eius, eos pariatur natus fugiat.</p>
+ 
+ <img src="madrid5.jpg">
+ <br>
+  
+</body>
+</html>

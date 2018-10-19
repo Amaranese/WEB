@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DISEÑO fLEXIBLE</title>
+    <style>
+        body{
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            }
+        aside{
+            width: 200px;
+            float: left;
+            margin-left: 20px
+        }
+        article{
+            float: left;
+            width: calc( 100% - 270px);
+        }
+        .multimedia{
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: auto;
+        }
+        .player{
+            height: 0;
+            width: 100%;
+            position: relative;
+            padding-bottom: 56.25%; /*Para video de 16:9 */
+            overflow: hidden;
+        }
+        .player iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+   <h1>Diseño Flexible</h1>
+   <article>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores incidunt et, esse optio in, nesciunt, suscipit eveniet repellat modi maiores, doloremque laudantium sit molestias perferendis recusandae quod cupiditate. Maiores, harum.</p>
+    <p>Laudantium nam nihil possimus harum eos, earum temporibus sapiente fuga quis beatae qui explicabo doloribus molestias expedita illo modi ipsum, veritatis aliquid adipisci, maiores labore sunt facere! Officia, et, obcaecati.</p>
+    <div class="player">
+    <iframe src="https://www.youtube.com/embed/ywwfV2VqBNg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <p>Totam obcaecati accusantium quo ullam ipsam, voluptatem excepturi inventore doloremque dolor, provident dolores doloribus sequi, veniam reiciendis! Modi excepturi reiciendis fuga quis, voluptate nam sapiente suscipit doloribus omnis alias sequi!</p>
+    <p>Voluptates magnam facere alias sapiente. Laudantium numquam sit architecto corporis ea dolore asperiores fuga at hic eaque, nobis quaerat recusandae officiis, nulla eius libero et dolor excepturi fugit. Excepturi, doloribus.</p>
+    <img src="madrid1.jpg" id="multimedia">
+    <p>Fuga nemo enim quidem impedit perspiciatis magnam assumenda vero dolor necessitatibus autem. Natus repellendus blanditiis exercitationem pariatur atque placeat dolore, possimus expedita veritatis odio reprehenderit voluptas unde perspiciatis cumque, aliquid.</p>
+    <p>Molestias commodi sit, dicta libero aspernatur. Odio fuga accusamus vero explicabo debitis, sapiente voluptate rem quam dicta et amet architecto, atque veniam incidunt ipsum! Consequatur sit animi est, itaque molestias!</p>
+    <video src="pelicula.ogv" controls class="multimedia"></video>
+    <p>Magnam culpa, aliquid harum asperiores nulla quidem! Temporibus dignissimos, eveniet esse aliquam iste eius, non, commodi blanditiis eos tempore reprehenderit vitae sapiente eaque facilis quos nihil? Illo voluptate aperiam, alias.</p>
+    <p>Accusamus fugiat quam nam omnis, facilis. Sint modi amet, laudantium commodi! Quis molestiae ex, soluta fugit at delectus enim tenetur sequi nihil dolore aliquam ipsam non ullam unde tempora. Odio.</p>
+    <p>Debitis consectetur at itaque, ex nam sunt nobis iure voluptates omnis, similique, laudantium quas dolorum optio recusandae qui animi esse quasi accusantium, rerum culpa ut autem odio dolorem soluta vitae.</p>
+    <p>Quibusdam nostrum nihil quaerat. Eius atque voluptatibus velit quidem laborum magni quis, excepturi placeat odit eveniet natus, aliquam omnis, facilis quae! Adipisci debitis magnam animi dolores nam, cumque dolore eligendi.</p>
+    <p>Reiciendis molestiae nemo fugit blanditiis ipsa reprehenderit ipsam sunt aliquam quaerat laudantium possimus sequi voluptatibus itaque iste libero aspernatur suscipit eaque impedit consequatur vitae, aliquid ducimus dolorem consequuntur. Reprehenderit, provident.</p>
+    <p>Accusamus culpa omnis totam aut quibusdam earum molestias delectus a, ut in vero sit, quas sapiente excepturi veritatis fuga voluptatum expedita suscipit dolor, ex quaerat nemo mollitia? Rerum, culpa, necessitatibus.</p>
+    </article>
+    <aside>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi eligendi laboriosam, enim ullam atque unde aperiam perspiciatis voluptatum doloremque accusantium? Excepturi corporis maiores praesentium nihil odio eveniet veritatis quisquam numquam.</p>
+        <img src="anuncio.gif" width="100%">
+    </aside>
+</body>
+</html>

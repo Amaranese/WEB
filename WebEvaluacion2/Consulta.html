@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Red Social Linkedin</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css1/style.css">
+    </head>
+    <style>
+        body{
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            height: 120px;
+            width: 750px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        
+    </style>
+    <script>
+        function submit_oculto(form) {
+            if ((form.nombre3.value != "") && (form.email3.value != "" ) && (form.telefono3.value != "" ) && (form.mensaje3.value != "" )){
+                
+               form.enviar3.disabled = false;
+               }else{
+                    form.enviar3.disabled = true;
+               }
+        }
+    </script>
+<body background="linkedin.jpg">
+   <ul>
+       <nav>
+          <a href="index.html" class="actual">Presentación</a>
+          <a href="Descarga.html">Descarga</a>
+           <a href="Documentacion.html">Documentación</a>
+           <a href="Consulta.html">Consulta</a>
+           <a href="DatosLegales.html">Datos Legales</a>
+           <a href="index.html">Otras Opciones</a>
+          </nav> 
+       <article>
+       <h1>Consultanos</h1>
+           <form name="formulario" method="POST" action="http://richart.pe.hu/mi-mail.php">
+               
+           <p>Nombre: </p>
+	              <input type="text" name="nombre3" size="142" onInput="submit_oculto(this.form)">
+	      <p>Email: </p>
+	             <input type="text" name="email3" size="142" onInput="submit_oculto(this.form)">
+	     <p>Telefono:</p>
+	             <input type="tel" name="telefono3" size="142" onInput="submit_oculto(this.form)" min="18" max="65">
+        <p>Comentarios:</p>
+               <input type="text" name="mensaje3" size="142"
+                      onInput="submit_oculto(this.form)"><br><br>
+               <input type="hidden" name="destinatario" value="alejandro_maranes_apps1ma1718@cev.com">
+            <input type="hidden" name="redireccion" value="http://alejandromaranes.epizy.com">
+        
+        <input type="checkbox" name="condiciones3" value="sí" required>  Acepto* los <a href="#" target="_blank" >Terminos y condiciones</a>
+       <br>
+       <input type="submit" name="enviar3" value="Enviar" disabled>
+	

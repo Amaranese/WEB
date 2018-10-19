@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ramones</title>
+
+        <link href='https://fonts.googleapis.com/css?family=Life+Savers|Raleway:400,900' rel="stylesheet">
+
+
+        <style>
+            * {
+                font-family: "Raleway", sans-serif;
+            }
+
+            h1, h2, h3, h4{
+                font-family: "Raleway", sans-serif;
+                text-align: center;
+            }
+
+            p{
+                font: 1.3rem "Life Savers", cursive;
+            }
+
+            h4{
+                font-size: 5rem;
+            }
+
+            h3{
+                font-size: 1.8rem;
+                color: #9E0A0F;
+            }
+
+            h2{
+                font-size: 3rem; 
+            }
+
+            h1{
+                font-size: 12vw;
+            }
+
+
+            /Reticula de maquetación/
+
+            body{
+                margin: 0;
+                background: #fbfbfb;
+            }
+
+            nav, header, div, footer{
+                box-sizing: border-box;
+                height: auto;
+                overflow: hidden;
+            } 
+
+            .anchocompleto{
+                background-color: grey;
+                color: white;
+                background-size: cover;
+                background-position: top center;
+                text-shadow: 0 2px 6px black;
+            }
+
+            .parallax{
+                background-attachment: fixed;
+            }
+
+            .contenedor{
+                width: 1200px;
+                margin: auto;
+                padding-top: 80px;
+
+            }
+
+            .mitad{
+                width: 50%;
+                float: left;
+                padding: 20px;
+            }
+
+            .tercio1{
+                width: 33.3%;
+                float: left;
+                padding: 20px; 
+            }
+
+            .tercio2{
+                width: 66.6%;
+                float: left;
+                padding: 20px; 
+            }
+
+            img{
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            .redonda{
+                border-radius: 100%;
+            }
+
+            /* Elementos y fondos */
+
+            nav{
+                background: #9E0A0F;
+                text-align: center;
+                padding: 5px;
+            }
+
+            nav a{
+                color: white;
+                text-decoration: none;
+                font-size: 2rem;
+                padding: 5px 20px;
+            }
+
+            nav a:hover{
+                background: black;
+            }
+
+            header{
+                background-image: url("header.jpg");
+                height: 100vh;
+                padding-top: 40vh;
+            }
+
+            #bn{
+                background-image: url("sentados.jpg");
+                height: 50vh;
+                padding-top: 20vh;
+            }
+            #depie{
+                background-image: url("depie.jpg");
+                height: 50vh;
+                padding-top: 20vh;
+            }
+
+            footer{
+                background-image: url("cuatro.jpg");
+                height: 50vh;
+                padding-top: 40vh;
+            }
+            footer h3{
+                color: white;
+            }
+
+
+            #baterias p{
+                text-align: center;
+                margin: 0;
+            }
+
+
+        </style>
+
+
+
+
+    </head>
+    <body>
+
+        <nav>
+            <a href="#">Portada</a>
+            <a href="#punk-rock">Punk-rock</a>
+            <a href="#fundadores">Fundadores</a>
+            <a href="#baterias">Baterias</a>
+            <a href="#discografia">Discografía</a>
+        </nav>
+
+
+
+        <header class="anchocompleto parallax">
+            <h1>RAMONES</h1>
+        </header>
+
+
+
+        <div  id="punk-rock" class="contenedor">
+            <div class="mitad">
+                <video src="ramones.mp4" poster="poster.jpg" width="100%" controls></video>
+            </div>
+            <div class="mitad">
+                <h3>The punk-rock kings</h3>
+                <p>Uno de los nombres esenciales de la música de los 70, impulsores del punk y animadores fundamentales del rock avivando la substancia del rock’n’roll más tradicional con una potente amalgama de sonidos pop, surf, bubblegum y rock, recreados por tres acordes y pegadizas melodías de cortísima duración, los Ramones se convirtieron en uno de los grupos más influyentes de todos los tiempos. </p>
+            </div>
+        </div>
+
+
+
+        <div id="bn" class="anchocompleto">
+            <h4>Hey Ho Lets Go!!!</h4>    
+        </div>
+
+
+
+        <div id="fundadores" class="contenedor">  
+            <h2>Componentes fundadores</h2>
+
+            <div class="tercio1">
+                <img src="joey.jpg" class="redonda">
+            </div>
+            <div class="tercio2">
+                <h3>Joey</h3>
+                <p>Cantante. El larguirucho que se plantaba en el escenario y de ahí no se movía. El tipo que fue hippie y después patentó el uniforme de campera de cuero y jeans rotos. Su forma de cantar era particular debido a que él nunca recibió ningún tipo de entrenamiento o clases. En una era de competencia vocal, cantar como un profesional fue sin duda una norma para la mayoría de las bandas de rock. Sus grietas, gruñidos, canto y su voz juvenil hizo que sea considerada una de las voces más reconocidas de punk rock.<br>Fallecio en 2001.</p>
+            </div>
+        </div>
+
+        <div class="contenedor"> 
+            <div class="tercio2">
+                <h3>Dee Dee</h3>
+                <p>Bajista y compositor. El chico malo. Siempre fue el más creativo de la banda de Queens, también el más infeliz. Fue chapero, aprendiz de atracador, vendedor y consumidor de heroína, cómplice de un robo a mano armada… y un genio poético que se dirigía hacia una temprana sepultura pero que se salvó gracias al rock ‘n’ roll”. Consideraba que el grupo era su unica familia.<br>Fallecio en 2002.</p>
+            </div>
+            <div class="tercio1">
+                <img src="deedee.jpg" class="redonda">
+            </div>
+        </div>
+
+        <div class="contenedor">
+            <div class="tercio1">
+                <img src="johnny.jpg" class="redonda">
+            </div>
+            <div class="tercio2">
+                <h3>Johnny</h3>
+                <p>Guitarrista. Principalmente se caracterizó por su particular forma de tocar, siempre agachado y rara vez tocando solos largos o difíciles. Hacía subidas y bajadas con la guitarra y tenía una habilidad para moverse y tocar muy rápido al mismo tiempo. Mantuvo una relación distante y conflictiva con Joey, sobre todo desde que le robo la novia.<br>Fallecio en 2004.</p>
+            </div>
+        </div>
+
+
+
+        <div id="baterias" class="contenedor">
+            <h2>Los baterias</h2>
+
+            <div class="tercio1">
+                <h3>Tommy</h3>
+                <img src="tommy.jpg">
+                <p>1974-78</p>
+            </div>
+
+            <div class="tercio1">
+                <h3>Marky</h3>
+                <img src="marky.jpg" >
+                <p>1978-83 y 1987-96</p>
+            </div>
+
+            <div class="tercio1">
+                <h3>Richie</h3>
+                <img src="richie.jpg">
+                <p>1983-87</p>
+            </div>
+
+        </div>
+
+
+
+        <div id="depie" class="anchocompleto parallax">
+            <h4>Gabba Gabba Hey!</h4>
+        </div>
+
+
+
+        <div id="discografia" class="contenedor">  
+            <h2>Discografía</h2>
+
+            <div class="mitad">
+                <img src="angels.png"> 
+                <h3></h3>
+                <p>Lamentablemente ya no podremos disfrutar de los Ramones en directo nunca más. Pero nos dejaton un buen puñado de discos cargados de himnos generacionales.</p>
+                <p>
+                    Su influencia también pervive en grupos de diferentes epocas: Green Day, Shonen Knife, Nikis, The Strokes, Foo Fighters ...</p>
+            </div>
+
+            <div class="mitad">
+                <img src="logo.png">
+                <p>
+                    Ramones (76)<br>
+                    Leave home (77)<br>
+                    Rocket to Russia (77)<br>
+                    Road to ruin (78)<br>
+                    End of the century (80)<br>
+                    Pleasant Dreams (81)<br>
+                    Subterranean Jungle (83)
+                </p>
+                <p>
+                    Too Tough to Die (84)<br>
+                    Animal Boy (86)<br>
+                    Halfway to Sanity (87)<br>
+                    Brain Drain (89)<br>
+                    Mondo bizarro (92)<br>
+                    Acid Eaters (93)<br>
+                    ¡Adiós amigos! (95)
+                </p>
+            </div>
+
+        </div>
+
+
+
+        <footer class="anchocompleto">
+            <h3>Creado por Alejandro Marañés Escribano</h3>
+        </footer> 
+
+
+    </body>
+</html>

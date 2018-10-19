@@ -1,0 +1,19 @@
+
+
+body { 
+  background: yellow ;  
+  color: blue;
+  font-size: 2rem ;
+}
+
+
+h1, h2 { 
+  font-family: 'Segoe Print'
+}
+
+
+p { 
+  font-family: monospace;
+  color: green;
+}
+

@@ -1,0 +1,242 @@
+  * {
+                font-family: "Raleway", sans-serif;
+            }
+
+            h1, h2, h3, h4{
+                font-family: "Raleway", sans-serif;
+                text-align: center;
+            }
+
+            p{
+                font: 1.3rem "Life Savers", cursive;
+            }
+
+            h4{
+                font-size: 5rem;
+            }
+
+            h3{
+                font-size: 1.8rem;
+                color: #9E0A0F;
+            }
+
+            h2{
+                font-size: 3rem; 
+            }
+
+            h1{
+                font-size: 12vw;
+            }
+
+
+            /Reticula de maquetación/
+
+            body{
+                margin: 0;
+                background-color: chartreuse;
+            }
+
+            nav, header, div, footer{
+                box-sizing: border-box;
+                height: auto;
+                overflow: hidden;
+            } 
+
+            .anchocompleto{
+                background-color: grey;
+                color: white;
+                background-size: cover;
+                background-position: top center;
+                text-shadow: 0 2px 6px black;
+            }
+
+            .parallax{
+                background-attachment: fixed;
+            }
+
+            .contenedor{
+                width: 1200px;
+                margin: auto;
+                padding-top: 80px;
+
+            }
+
+            .mitad{
+                width: 50%;
+                float: left;
+                padding: 20px;
+            }
+
+            .tercio1{
+                width: 33.3%;
+                float: left;
+                padding: 20px; 
+            }
+
+            .tercio2{
+                width: 66.6%;
+                float: left;
+                padding: 20px; 
+            }
+
+            img{
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            .redonda{
+                border-radius: 100%;
+            }
+
+            /* Elementos y fondos */
+
+            nav{
+                background: #9E0A0F;
+                text-align: center;
+                padding: 5px;
+            }
+
+            nav a{
+                color: white;
+                text-decoration: none;
+                font-size: 2rem;
+                padding: 5px 20px;
+            }
+
+            nav a:hover{
+                background: green;
+            }
+
+            header{
+                background-image: url("Ozora.jpg");
+                height: 100vh;
+                padding-top: 40vh;
+            }
+
+            #bn{
+                background-image: url("ozora23.jpg");
+                height: 50vh;
+                padding-top: 20vh;
+            }
+            #depie{
+                background-image: url("ozora30.jpg");
+                height: 50vh;
+                padding-top: 20vh;
+            }
+            footer h3{
+                color: white;
+            }
+div{
+/*	border:1px solid green;*/
+	margin: auto;
+	width: 750px;
+	}
+h1{
+	color: gren;
+	}
+.contact_form ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width:750px; 
+	}
+.contact_form li{
+	padding: 12px;
+	border-bottom-color: 1px solid #9293a0;
+	position:relative;
+	}
+.contact_form li:first-child, .contact_form li:last-child{
+	border-bottom:1px solid #777;
+	}
+.contact_form label{
+	float: left;
+	display: inline-block; 
+	margin-top: 3px;
+	padding: 3px;
+	width: 150px;
+	}
+.contact_form input{
+	height: 50px;
+	padding: 5px 8px;
+	width: 220px;
+	}
+.contact_form textarea{
+	padding: 8px;
+	width: 500px;
+	}
+.contact_form .buttom{
+	margin-left: 156px;
+	}
+.contact_fomr input, .contact_form textarea{
+	border:1ps solid #aaa;
+	border-radius:2px;
+	box-shadow:0 0 3px #ccc, 0 10px 15px #eee inset;
+	padding-right:30px ;
+	-moz-transition:padding -25s;
+	-webkit-trasition:padding -25s;
+	}
+.contact_form input:focus, .contact_form textarea:focus{
+	background: #fff;
+	border:1px solid #555;
+	box-shadow:0 0 3px #aaa;
+	padding-right: 70px;
+	} 
+.contact_form input:required, .contact_form textarea:required{
+	background: #fff url(ad.jpg) no-repeat 98% center;  
+	}
+.contact_form input:required:valid, .contact_form textarea:required:valid{
+	background: #fff url(valido.png) no-repeat 98% center;
+	border-color: #28921f;
+	box-shadow:0 0 5px #5cd053;
+	}
+.contact_form input:invalid, .contac_form textarea:invalid{
+	background: #fff url(x.jpg) no-repeat 98% center;
+	border-color: #b03535;	
+	box-shadow:0 0 5px #d45252;
+	}
+.font_hint{
+	background: #d45353;
+	border-radius:5px;
+	color: #fff;
+	margin-left: 8px;
+	padding: 1px 5px;
+	z-index: 999;
+	position: absolute;
+	display: none;
+	}
+.font_hint{
+	content: "\25c0";
+	color: #fff ;
+	position: absolute;
+	top:1px;
+	left: -1px;
+	}
+.contact_form input:focus + .font_hint{
+	display: inline;
+	}
+.contac_form input:required:valid +.font_hint{
+	background: #28912f;
+	}
+.contact_form input:required:valid +.font_hint::before{
+	color: #28921f;
+	}
+button.buttom{
+	background: #68b12f;
+	border:1px solid #509111;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	box-shadow:inset 0 1px 0 0 #9fd574;
+	color: white;;
+	padding:6px 20px;
+	text-align: center;
+	text-shadow:0 -1 0 #396715;
+	}
+button.buttom:hover{
+	opacity: .85;
+	cursor: pointer;
+	}
+button.buttom:active{
+	border:1px solid #20911a;
+	box-shadow:0 0 10px 5px #356b0b;
+	}
+

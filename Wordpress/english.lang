@@ -1,0 +1,156 @@
+0x0409:English
+ 
+CONNWITH=Connecting with '%s'
+CONNECTING=Connecting
+CONNECTED=Connected
+DISCONNECTED=Disconnected
+RESOLVING=Resolving name
+ 
+MI_ABOUT=About
+ 
+MI_FTP=&FTP
+MI_CONNECT=&Connect
+MI_DISCONNECT=&Disconnect
+MI_SETTINGS=&Settings
+MI_EXIT=&Exit
+ 
+MI_LOCALSYS=&Local system
+MI_REMOTESYS=&Remote system
+MI_NEWDIR=New directory
+MI_RENAME=Rename
+MI_DELETE=Delete
+MI_REFRESH=Refresh
+MI_CHMOD=&Change attributes
+ 
+MI_TRANSFER=&Transfer
+MI_UPLOAD=&Upload files
+MI_DOWNLOAD=&Download files
+MI_CANCELTRANSF=&Cancel transfer
+ 
+MI_UTILITIES=&Utilities
+MI_COMPDIRS=&Compare directories
+ 
+CONNECT=Connect
+RECONNECT=Reconnect
+DISCONNECT=Disconnect
+CANCELTRANSF=Cancel transfer
+DIRUP=Directory up
+UPLOAD=Upload files
+DOWNLOAD=Download files
+NEWDIR=New directory
+RENAME=Change name
+DELETE=Delete
+REFRESH=Refresh
+GOTO=Go to
+CHMOD=Change attributes
+VIEWSTYLE=View style
+VLARGEICONS=Large icons
+VSMALLICONS=Small icons
+VLIST=List
+VREPORT=Details
+
+LOCALSYS=Local system
+REMOTESYS=Remote system
+
+FILENAME=Name
+FILESIZE=Size
+FILEDATE=Date
+FILEATTR=Attr
+
+OK=Ok
+CANCEL=Cancel
+YES=Yes
+NO=No
+EDIT=Edit
+RETRY=Retry
+IGNORE=Ignore
+NEW=New
+CONNECT=Connect
+CLOSE=Close
+
+SITEMAN=Site manager
+ 
+BUGSTO=Send comments and bugs to
+ 
+OWNER=Owner
+GROUP=Group
+PUBLIC=Public
+MANUAL=Manual
+ 
+EDITSITE=Edit site
+SITENAME=Site name
+GENERAL=General
+DIRECTORIES=Directories
+ADVANCED=Advanced
+LANGUAGE=Language
+HOST=Host/Address
+USERNAME=Name
+PASSWORD=Password
+ANONYMOUS=Anonymous
+DEFDIRLOC=Initial local directory
+DEFDIRREM=Initial remote directory
+PORT=Port
+PASVMODE=Passive mode
+USEPROXYSOCKS=Use Proxy/SOCKS
+GLOBOPTEEXT=In options marked with grey background, global configuration will be used. 
+ 
+SETTINGS=Settings
+EMAIL=E-Mail Address
+USEPROXY=Use Proxy server
+PROXYSERVER=Proxy server
+NOSOCKS=Don't use SOCKS
+SOCKSSERVER=SOCKS server
+SOCKSRESOLVE=Use SOCKS to resolve names
+ 
+COMPDIRS=Compare directories
+COMPARE=Compare
+IGNORECASE=Ignore case
+COMPSIZES=Compare sizes
+COMPDATES=Compare dates
+IDENDIRS=Identical directories
+ 
+DIRNAME=Directory name
+NEWREMOTEDIR=New remote directory
+NEWLOCALDIR=New local directory
+CONFIRMATION=Confirmation
+QDELSELELEMENT=Delete selected items?
+DELETING=Deleting files
+UPLOADING=Uploading files
+DOWNLOADING=Downloading files
+RENAMING=Changing name from '%s' to '%s'
+READY=Ready
+CHTODIR=Changing to directory '%s' 
+ 
+
+CHPARENTDIR=Changing parent directory
+DELFILES=Delete files
+DELETINGFILE=Deleting file '%s'
+DELETINGDIR=Deleting directory '%s'
+MKDIR=Creating directory '%s'
+FILEALREADYEXISTS=File '%s' already exists
+OVERWRITE=Overwrite?
+DOWNLOADINGFILE=Downloding '%s'
+UPLOADINGFILE=Uploading '%s'
+ 
+MKDIRERR=Error creating directory '%s'
+DELDIRERR=Error deleting directory '%s'
+DELFILEERR=Error deleting file '%s'
+DOWNLOADERR=Error downloading '%s'
+UPLOADERR=Error uploading '%s'
+CANTUPLOADNOFS='%s' cannot be uploaded because it doesn't belong to filesystem
+CANTDELNOFS='%s' '%s' cannot be deleted because it doesn't belong to filesystem
+ 
+DISCURDIR=Discovering current directory
+DOWNLOADINGLIST=Downloading list
+UPDATINGVIEW=Updating view
+ 
+OF=of
+KBSEC=KB/Sec
+AUTO=Automatic
+INFORMATION=Information
+RESTART=You must restart application to get it changed
+NEWVERCAP=New version
+NEWVERSION=There is a new version of the application
+CURRENTVER=Current version
+NEWVER=New version
+MOREINFO=For more information go to

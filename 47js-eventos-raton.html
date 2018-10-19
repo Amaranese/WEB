@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos de Raton</title>
+</head>
+<body>
+   <h1>Eventos de Raton</h1>
+   <input type="button" value="Haz click aqui"
+   onclick="alert('Has hecho click con el boton principal')">
+   <br>
+   <input type="button" value="Presiona aqui"
+   onMouseDown="alert('Has comenzado a pulsar el botón')">
+   <br>
+   <input type="button" value="Presiona y suelta aqui"
+   onMouseUp="alert('Has soltado el botón')">
+   <br>
+   <input type="button" value="Ver foto"
+   onMouseDown="document.getElementById('foto').hidden=false"
+   onMouseUp="document.getElementById('foto').hidden=true">
+   <br>
+   <div id="foto" hidden style="position: absolute; top: 30px; right: 30px">
+       <img src="madrid4.jpg" width="200px">
+   </div>
+   <br>
+   <input type="button" value="Entra aqui"
+   onMouseOver="alert('Has entrado en el botón')">
+   <br>
+   <input type="button" value="Entra y sal aqui"
+   onMouseOut="alert('Has salido el botón')">
+   <br>
+   <img src="madrid5.jpg"
+   onMouseOver="this.src='madrid3.jpg';"
+   onMouseOut="this.src='madrid2.jpg';">
+   <br>
+   <video src="pelicula.ogv"
+      onMouseOver="this.play();"
+      onMouseOut="this.pause();">
+       
+   </video>
+   
+</body>
+</html>

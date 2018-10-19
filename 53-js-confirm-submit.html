@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirmar envio de formulario</title>
+  
+  <script>
+    function confirmar(){
+      return confirm('¿Seguro que quiere enviar sus datos?');  
+    }
+  </script>
+
+</head>
+<body>
+  <h1>Confirmar envio de formulario</h1>
+  
+  
+  
+  <form action="http://richart.pe.hu/mostrar.php" method="post" onsubmit="return confirmar()">
+    
+    Nombre <input type="text" name="nombre"><br>
+    
+    Teléfono <input type="tel" name="telefono"><br>
+    
+    <input type="submit" >
+        
+  </form>
+  
+  
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Control Multimedia</title>
+    <script>
+        function reproducir(){
+            var parado = document.getElementById('cine').paused;
+            if (parado){
+                document.getElementById('icono').src='pause.svg';
+                document.getElementById('cine').play();
+            }else{
+                document.getElementById('cine').pause();
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Control Multimedia</h1>
+    <img src="play.svg" width="32" onclick="reproducir()">
+    <br>
+    <video src="pelicula.webm" controls></video>
+    </body>
+</html>

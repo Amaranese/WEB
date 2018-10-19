@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Diseño flexible</title>
+
+    <style>
+      body {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+      }
+      aside {
+        box-sizing: border-box;
+        float: left;
+        width: 250px;
+        margin-left: 20px;
+        padding: 10px;
+        background: lavender;
+      }
+      article {
+        float: left;
+        width: calc(100% - 270px);
+      }
+      .multimedia {
+        width: 100%;
+        max-width: 500px;
+        display: block;  /* para que admita propiedades de bloque */
+        margin: auto;    /* Para centrarlo  */
+      }
+      .player {
+        height: 0;
+        width: 100%;
+        position: relative;
+        padding-bottom: 56.25% ; /* Para video de 16:9   */
+        overflow: hidden;
+      }
+      .player iframe  {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <h1>Diseño flexible</h1>
+
+    <article>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium sed dignissimos commodi exercitationem nihil, fuga minus non, ex ad consectetur aut incidunt laboriosam praesentium et inventore explicabo nesciunt, recusandae quisquam.</p>
+
+      <div class="player">
+        <iframe src="https://www.youtube.com/embed/tPk6jtkW9Zc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+
+      <p>Sapiente ratione tempora natus, dignissimos nulla expedita quo aspernatur sit maiores modi culpa laboriosam qui inventore libero rem. Cumque voluptate laborum dolore qui neque aperiam at doloremque non, nemo incidunt.</p>
+      <video src="pelicula.mp4" controls class="multimedia"></video>
+      <p>Non harum porro blanditiis velit, nesciunt architecto tempore doloremque quisquam vel eos dicta esse delectus consequatur, id minima cupiditate error odio natus itaque cumque asperiores! Nostrum quas ad, totam voluptatem.</p>
+      <img src="madrid4.jpg" class="multimedia">
+      <p>Deleniti, inventore, sit. Quisquam suscipit beatae, impedit dicta quidem numquam eaque dolores cumque, ad, alias, accusamus ex. Ex unde ullam, quaerat cupiditate eos eveniet, quidem officia porro! Voluptate, numquam alias.</p>
+      <p>Natus eveniet quos provident officiis incidunt. Quibusdam commodi, impedit molestias vero dolor sint, officia, quo eaque in, tempore deleniti ab incidunt optio quisquam ipsam hic quaerat tempora voluptatibus sunt quasi.</p>
+      <p>Est, quia! Dolor minima impedit, qui natus, eius molestias officiis veritatis voluptate unde accusamus est deserunt! Illo tempore explicabo sequi omnis vitae, voluptas, quos consequuntur exercitationem, totam qui dolorum, quae.</p>
+      <p>Perspiciatis nisi fugiat magnam enim pariatur. Incidunt amet numquam, iusto, nemo ut quis consectetur odio soluta dolorem cum, ducimus tempora, quasi porro nulla omnis maiores. Magnam mollitia, molestiae culpa dicta.</p>
+      <p>Maiores ad, quidem voluptas sit assumenda, laborum dolores odit sint placeat. Nulla laudantium ducimus omnis. Veniam quam iure, voluptatibus eos, repudiandae quidem blanditiis molestiae sed nam velit totam vitae! Dolorum.</p>
+      <p>Asperiores earum voluptatibus fugiat dolorem, maxime culpa ut aspernatur nisi, error aliquam aperiam ab rerum vero, quos a deleniti! Excepturi repellendus sit animi, deleniti dolor ad praesentium illum perferendis ipsum.</p>
+      <p>Natus molestiae eveniet repellat distinctio repellendus reprehenderit aliquid. Reprehenderit sunt delectus, necessitatibus vitae a numquam, optio, eos explicabo repellendus perferendis consequatur illo aliquam inventore repudiandae id! Nesciunt ratione odit ipsum!</p>
+
+      <p>Dicta sequi, rerum at sed dolore cum illum molestiae corporis deleniti, eaque, accusantium dolorem nemo neque ducimus. Incidunt neque eaque quam vero iure ut amet rem, veniam expedita doloremque aspernatur.</p>
+    </article>
+
+    <aside>
+      <p>Iste ratione laborum quibusdam aliquam voluptatum quam nesciunt. In voluptate, exercitationem excepturi totam minima, molestias animi necessitatibus porro, numquam laboriosam delectus perferendis est explicabo alias odit consectetur maiores enim nisi?</p>
+      <img src="anuncio.gif" width="100%">
+    </aside>
+
+  </body>
+</html>

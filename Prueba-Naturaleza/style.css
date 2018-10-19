@@ -1,0 +1,52 @@
+/* Estilos CSS*/
+
+body{
+    background: grey url no-repeat center center fixed;
+    background-size: cover;
+    color:white;
+    font-family: sans-serif;
+}
+header{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+header img{
+    width: 100px;
+}
+nav{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background: rgba(0,0,0, 0.4);
+    padding: 10px 20px;
+}
+nav a:hover .actual{
+    background: rgba(0,0,0, 0.7);
+}
+article{
+    width: 50%;
+    background: rgba(0,0,0, 0.4);
+    padding: 10px 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+aside{
+   position: absolute;
+   bottom: 20px;
+   right: 20px; 
+}
+
+aside img{
+    filter: grayscale(100%) opacity(50%);
+}
+aside img:hover{
+    filter: none;
+}

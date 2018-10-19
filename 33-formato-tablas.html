@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tablas</title>
+  
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    
+    td {
+      border-bottom: 1px solid #777;
+      padding: 5px 20px;
+    }
+    
+    /* Filas impares */
+    tr:nth-child(odd) td {
+      background: #eee;
+    }
+    
+    
+    /* Primera fila */
+    tr:first-child td {
+      background: #444;
+      color: white;
+      font-family: sans-serif;
+      font-weight: bold;
+    }
+    
+    /* Primera columna */
+    td:nth-child(1) {
+      font-weight: bold;
+    }
+    
+    /* Una celda concreta */    
+    tr:nth-child(4) td:nth-child(4) {
+      color: red;
+    }
+    
+    /* Destaca fila al pasar el ratón */
+    tr:hover td {
+      background: yellow;
+    }
+    
+
+    
+  </style>
+  
+</head>
+<body>
+  
+  <h1>Tablas</h1>
+  
+  
+  <table>
+    <tr>
+      <td>Nombre</td>
+      <td>Apellido</td>
+      <td>Teléfono</td>
+      <td>Ciudad</td>
+    </tr>
+    <tr>
+      <td>Luis Miguel</td>
+      <td>Richart</td>
+      <td>912345678</td>
+      <td>Madrid</td>
+    </tr>
+    <tr>
+      <td>Perico</td>
+      <td>Palotes</td>
+      <td>091</td>
+      <td>Caceres</td>
+    </tr>
+    <tr>
+      <td>María</td>
+      <td>Piconera</td>
+      <td>62095184</td>
+      <td>Valencia</td>
+    </tr>
+    <tr>
+      <td>Luis Miguel</td>
+      <td>Richart</td>
+      <td>912345678</td>
+      <td>Madrid</td>
+    </tr>
+    <tr>
+      <td>Perico</td>
+      <td>Palotes</td>
+      <td>091</td>
+      <td>Caceres</td>
+    </tr>
+    <tr>
+      <td>María</td>
+      <td>Piconera</td>
+      <td>62095184</td>
+      <td>Valencia</td>
+    </tr>
+  </table>
+  
+  
+ 
+  
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Objetos típicos</title>
+  
+  <script>
+    var mensaje="Ola ke ase?";
+    
+    var nombres=['Pedro', 'Andrea', 'Juan', 'Isabel'];
+    
+    function comprobar() {
+      var dato= document.getElementById('phone').value;
+      
+      if(dato == ''){
+        alert('Escriba su teléfono');
+      } else {
+        alert('Gracias por enviar sus datos');
+      }
+    }
+  
+  
+  </script>
+  
+  
+  
+</head>
+<body>
+  <h1>Objetos típicos</h1>
+  
+  <h2>Variables</h2>
+  <input type="button" value="Saludar" onclick="alert(mensaje)";>
+  <br>
+  <input type="button" value="¿Quien?" onclick="this.value=nombres[1];">
+  <input type="button" value="¿Quien?" onclick="this.value=nombres[3];">
+  <input type="button" value="¿Quien?" onclick="this.value=nombres[0];">
+  <input type="button" value="¿Quien?" onclick="this.value=nombres[2];">
+  <br>
+  <br>
+  
+  Teléfono <input type="tel" name="telefono" id="phone">
+  
+  <input type="submit" onclick="comprobar()">
+  
+</body>
+</html>

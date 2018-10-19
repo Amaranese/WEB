@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LocalStorage</title>
+  
+  <script>
+    function guardar() {
+      var valor = document.getElementById('nomb').value;
+      localStorage.setItem('nom', valor);
+    }
+    
+    function recuperar(){
+      document.getElementById('nomb').value = localStorage.getItem('nom');
+    }
+  </script>
+  
+</head>
+<body>
+  <h1>LocalStorage</h1>
+  
+  <form action="http://richart.pe.hu/mostrar.php" method="post" >
+    <input type="button" value="Guardar"   onclick="guardar()">
+    <input type="button" value="Recuperar" onclick="recuperar()">   
+    <br><br>
+    Nombre <input type="text" name="nombre" id="nomb" ><br>
+    
+    Teléfono <input type="tel" name="telefono" ><br>
+    
+    <input type="submit" >
+       
+    
+        
+  </form>
+  
+  
+  
+</body>
+</html>

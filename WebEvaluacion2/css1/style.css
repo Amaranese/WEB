@@ -1,0 +1,44 @@
+
+article{
+    width: 50%;
+    color:yellow;
+    background: rgba(0,0,0, 0.4);
+    padding: -20px -90px  30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+nav{
+    background: #9E0A0F;
+    text-align: center;
+    
+    padding: 12px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 6px 20px;
+}
+nav{
+    box-sizing: border-box;
+    height: auto;
+    overflow: hidden;
+}
+ nav a:hover{
+     
+     background: green;
+     color: yellow;
+}
+aside{
+    
+    bottom: 20px;
+    right: 20px;
+}
+aside img{
+    filter: grayscale(100%) opacity(50%);
+}
+aside img:hover{
+    filter: none;
+}
+

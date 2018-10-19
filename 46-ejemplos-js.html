@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Ejemplos </title>
+    <script src="46-script.js"></script>
+        
+    
+</head>
+<body>
+   <h1>Ejemplos Javascript</h1>
+   <script>
+    document.write(new Date());
+    </script>
+    <input type="button" value="Saludar" onclick="alert('Hola mundo de mierda')">
+    <br>
+    <input type="button" value="Cambiar fondo" onclick="document.body.style.backgroundColor='orange';">
+    <br>
+    <label>
+    <input type="checkbox" onclick="document.getElementById('enviar').disabled=!this.checked"> Acepto las condiciones
+    </label>
+    <br>
+    <input type="submit" disabled id="enviar">
+    <br>
+    <input type="button" value="Abrir CEV" onclick="abrirVentana('http://www.cev.com')">
+    <br>
+    <input type="button" value="Comunidad de Madrid" onclick="abrirVentana('http://www.madrid.org')">
+    <br>
+    <input type="button" value="CIA" onclick="abrirVentana('https://www.cia.gov/es')">
+    <br>
+    <input type="button" value="Moncloa" onclick="abrirVentana('http://www.lamoncloa.gob.es/Paginas/index.aspx')">
+</body>
+</html>

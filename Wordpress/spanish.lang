@@ -1,0 +1,157 @@
+0x040A:Español
+
+CONNWITH=Conectando con '%s'
+CONNECTING=Conectando
+CONNECTED=Conectado
+DISCONNECTED=Desconectado
+RESOLVING=Resolviendo nombre
+
+MI_ABOUT=Acerca de
+
+MI_FTP=&FTP
+MI_CONNECT=&Conectar
+MI_DISCONNECT=&Desconectar
+MI_SETTINGS=&Opciones
+MI_EXIT=&Salir
+
+MI_LOCALSYS=&Sistema local
+MI_REMOTESYS=&Sistema remoto
+MI_NEWDIR=Nuevo directorio
+MI_RENAME=Cambiar nombre
+MI_DELETE=Eliminar
+MI_REFRESH=Actualizar
+MI_CHMOD=&Cambiar atributos
+
+MI_TRANSFER=&Transferencia
+MI_UPLOAD=&Enviar archivos
+MI_DOWNLOAD=&Descargar archivos
+MI_CANCELTRANSF=&Cancelar transferencia
+
+MI_UTILITIES=&Utilidades
+MI_COMPDIRS=&Comparar directorios
+
+CONNECT=Conectar
+RECONNECT=Reconectar
+DISCONNECT=Desconectar
+CANCELTRANSF=Cancelar transferencia
+DIRUP=Subir nivel
+UPLOAD=Enviar archivos
+DOWNLOAD=Descargar archivos
+NEWDIR=Nuevo directorio
+RENAME=Cambiar nombre
+DELETE=Eliminar
+REFRESH=Actualizar
+GOTO=Ir a
+CHMOD=Cambiar atributos
+VIEWSTYLE=View style
+VLARGEICONS=Iconos grandes
+VSMALLICONS=Iconos pequeños
+VLIST=Lista
+VREPORT=Detalles
+
+LOCALSYS=Sistema local
+REMOTESYS=Sistema remoto
+
+FILENAME=Nombre
+FILESIZE=Tamaño
+FILEDATE=Fecha
+FILEATTR=Atributos
+
+OK=Aceptar
+CANCEL=Cancelar
+YES=Si
+NO=No
+EDIT=Editar
+RETRY=Reintentar
+IGNORE=Ignorar
+NEW=Nuevo
+CONNECT=Connectar
+CLOSE=Cerrar
+
+SITEMAN=Administrador de sitios
+
+BUGSTO=Enviar comentarios y errores a
+
+OWNER=Dueño
+GROUP=Grupo
+PUBLIC=Publico
+MANUAL=Manual
+
+EDITSITE=Editar sitio
+SITENAME=Nombre del sitio
+GENERAL=General
+DIRECTORIES=Directorios
+ADVANCED=Avanzado
+LANGUAGE=Idioma
+HOST=Host/Dirección
+USERNAME=Nombre
+PASSWORD=Contraseña
+ANONYMOUS=Anonimo
+DEFDIRLOC=Directorio inicial local
+DEFDIRREM=Directorio inicial remoto
+PORT=Puerto
+PASVMODE=Modo pasivo
+USEPROXYSOCKS=Usar Proxy/SOCKS
+GLOBOPTEEXT=En las opciones marcadas con fondo gris, se utilizará la configuración global.
+
+SETTINGS=Opciones
+EMAIL=Dirección de correo
+USEPROXY=Usar servidor Proxy
+PROXYSERVER=Servidor Proxy
+NOSOCKS=No utilizar SOCKS
+SOCKSSERVER=Servidor SOCKS
+SOCKSRESOLVE=Usar SOCKS para resolver nombres
+
+COMPDIRS=Comparar directorios
+COMPARE=Comparar
+IGNORECASE=Ignorar mayusculas/minusculas
+COMPSIZES=Comparar tamaños
+COMPDATES=Comparar fechas
+IDENDIRS=Los directorios son identicos
+
+DIRNAME=Nombre del directorio
+NEWREMOTEDIR=Nuevo directorio remoto
+NEWLOCALDIR=Nuevo directorio local
+CONFIRMATION=Confirmación
+QDELSELELEMENT=¿Eliminar los elementos seleccionados?
+DELETING=Eliminando archivos
+UPLOADING=Enviando archivos
+DOWNLOADING=Descargando archivos
+RENAMING=Cambiando nombre de '%s' a '%s'
+READY=Preparado
+CHTODIR=Cambiando al directorio '%s'
+
+
+CHPARENTDIR=Cambiando al directorio padre
+DELFILES=Eliminar archivos
+DELETINGFILE=Eliminando archivo '%s'
+DELETINGDIR=Eliminando directorio '%s'
+MKDIR=Creando directorio '%s'
+FILEALREADYEXISTS=El archivo '%s' ya existe
+OVERWRITE=¿Desea sobrescribirlo?
+DOWNLOADINGFILE=Descargando '%s'
+UPLOADINGFILE=Enviando '%s'
+
+MKDIRERR=Se ha producido un error al crear el directorio '%s'
+DELDIRERR=Se ha producido un error al borrar el directorio '%s'
+DELFILEERR=Se ha producido un error al borrar el archivo '%s'
+DOWNLOADERR=Se ha producido un error al descargar '%s'
+UPLOADERR=Se ha producido un error al enviar '%s'
+CANTUPLOADNOFS='%s' no pueder ser enviado ya que no pertenece al sistema de archivos
+CANTDELNOFS='%s' no pueder ser eliminado ya que no pertenece al sistema de archivos
+
+DISCURDIR=Descubriendo directorio actual
+DOWNLOADINGLIST=Descargando listado
+UPDATINGVIEW=Actualizando vista
+
+OF=de
+KBSEC=KB/Seg
+AUTO=Automático
+INFORMATION=Información
+RESTART=Debe reiniciar la aplicación para que se produzcan los cambios
+
+NEWVERCAP=Nueva versión
+NEWVERSION=Existe una nueva versión de la aplicación
+CURRENTVER=Versión actual
+NEWVER=Nueva versión
+MOREINFO=Para mas información dirijase a

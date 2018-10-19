@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Ejemplos</title>
+  
+  <script src="45-script.js"></script>
+  
+</head>
+<body>
+ 
+ 
+ 
+  <h1 id="titular">Ejemplos JavaScript</h1>
+  
+  <script>
+    /* Comentario 
+       de varios 
+       renglones  */
+    document.write(new Date());   //Comentario al final deun renglón
+  </script>
+  
+  <br><br>
+  <input type="button" value="Saludar" 
+  onclick="alert('Ola ke ase?')">
+  
+  <br> <br>
+  
+  <input type="button" value="Cambiar fondo"
+    onclick="document.body.style.backgroundColor='orange';"> 
+  
+  <br><br>
+  <label>
+    <input type="checkbox" 
+      onclick="document.getElementById('enviar').disabled=!this.checked"> Acepto las condiciones
+  </label>
+  <br>
+  <input type="submit" disabled id="enviar">
+  
+  <br><br>
+  
+  <input type="button" value="CEV" 
+    onclick="abrirVentana('http://www.cev.com')">
+  <input type="button" value="Comunidad Madrid" 
+    onclick="abrirVentana('http://www.madrid.org')">
+  <input type="button" value="Google" 
+    onclick="abrirVentana('http://www.google.es')">
+    
+  <script>
+  document.getElementById('titular').style.fontSize='5rem';
+ </script>
+</body>
+</html>

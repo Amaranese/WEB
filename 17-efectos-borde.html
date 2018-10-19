@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Efectos de borde</title>
+  
+  <style>
+    body{
+      background: lavender;
+    }
+    nav {
+      margin: 20px;
+    }
+    
+    img {
+      margin: 10px;
+      border-radius: 100%;
+      border: 10px solid white;
+      box-shadow: 0 3px 10px rgba(0,0,0, 0.3)
+    }
+
+    
+    /* Primera barra de navegación */
+    #primero a {
+      text-decoration: none;
+      font: 1.5rem "Segoe UI", sans-serif;
+      background: #aaa;
+      color: RoyalBlue	;
+      margin: 10px;
+      padding: 2px 10px 5px 10px;
+      border: 4px grey outset;
+    }
+    #primero a:active {
+      background: #999;
+      color: black;
+      border: 4px grey inset;
+    }
+    
+    
+    /* Segunda barra de navegación */
+    #segundo a {
+      text-decoration: none;
+      font: 1.5rem "Segoe UI", sans-serif;
+      background: #aaa;
+      color: RoyalBlue	;
+      margin: 10px;
+      padding: 2px 15px 5px 15px;
+      border-radius: 30px;
+    }
+    #segundo a:hover {
+      background: RoyalBlue	;
+      color: white;
+    } 
+
+    /* Tercera barra de navegación */
+    #tercero a {
+      text-decoration: none;
+      font: 1.5rem "Segoe UI", sans-serif;
+      background: #4C95AD;
+      color: white	;
+      margin: 10px;
+      padding: 2px 15px 5px 15px;
+      border-radius: 4px;
+      border-bottom: 3px solid #49626A
+    }
+    #tercero a:hover {
+      background: #7FACBA	;
+    } 
+    #tercero a:active {
+      background: #60828C ;
+    } 
+    
+    
+    
+    /* Cuarta barra de navegación */
+    #cuarto a {
+      text-decoration: none;
+      font: 1.5rem "Segoe UI", sans-serif;
+      margin: 0px;
+      background: orange;
+      color: white	;
+      padding: 2px 15px 5px 15px;
+      border-radius: 15px 15px 0 0;
+      
+      border: 3px solid orange;
+      border-bottom-color: tomato;
+    }
+    #cuarto a:hover {
+
+      border-color:tomato;
+      border-bottom-color: orange;
+    } 
+ 
+    /* Quinta barra de navegación */
+    #quinto a {
+      text-decoration: none;
+      font: 1.5rem "Segoe UI", sans-serif;
+      background: #4C95AD;
+      color: white	;
+      margin: 10px;
+      padding: 2px 15px 5px 15px;
+      border-radius: 4px;
+      box-shadow: 0 3px 3px rgba(0,0,0, 0.5);
+
+    }
+    #quinto a:hover {
+      background: #7FACBA;
+      box-shadow: 0 4px 6px rgba(0,0,0, 0.5);
+    } 
+    #quinto a:active {
+      background: #60828C ;
+      box-shadow: 0 1px 2px rgba(0,0,0, 0.7);
+    } 
+  </style>
+  
+</head>
+<body>
+ <h1>Efectos de borde</h1>
+ 
+ <nav id="primero">
+   <a href="#">Inicio</a>
+   <a href="#">Productos</a>
+   <a href="#">Servicios</a>
+   <a href="#">Contacto</a>
+   <a href="#">Mapa</a>
+ </nav>
+ 
+ <nav id="segundo">
+   <a href="#">Inicio</a>
+   <a href="#">Productos</a>
+   <a href="#">Servicios</a>
+   <a href="#">Contacto</a>
+   <a href="#">Mapa</a>
+ </nav>
+ 
+ 
+ <nav id="tercero">
+   <a href="#">Inicio</a>
+   <a href="#">Productos</a>
+   <a href="#">Servicios</a>
+   <a href="#">Contacto</a>
+   <a href="#">Mapa</a>
+ </nav>
+ 
+  <nav id="cuarto">
+   <a href="#">Inicio</a><a href="#">Productos</a><a href="#">Servicios</a><a href="#">Contacto</a><a href="#">Mapa</a>
+ </nav>
+ 
+ 
+ <nav id="quinto">
+   <a href="#">Inicio</a>
+   <a href="#">Productos</a>
+   <a href="#">Servicios</a>
+   <a href="#">Contacto</a>
+   <a href="#">Mapa</a>
+ </nav>
+ 
+ 
+ <br><br>
+ <img src="imagenes/hombre.jpg">
+ <img src="imagenes/mujer.png">
+ 
+ 
+  
+</body>
+</html>

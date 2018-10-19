@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Design: Adaptación al dispositivo</title>
+  
+  <style>
+  /*** Reglas para todos los dispositivos ***/
+  
+    body {
+      font-family: sans-serif;
+    }
+    .rodeada {
+      width: 35%;
+      float: left;
+      margin-right: 10px;
+    }
+    
+    /*** Reglas para pantallas  ***/    
+    @media screen {
+      body {
+        font-family: "Calibri";
+        color: #8E3530
+      }
+      h1, h2 {
+        color: red;
+      }
+      a {
+        color: red;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      .noscreen {
+        display: none;
+      }
+    }
+    
+    
+    /*** Reglas para impresión  ***/  
+    @media print {
+      body {
+        font-family: "Palatino Linotype", serif;
+        font-size: 12pt;
+        color: black;
+        background: white;
+      }
+      p {
+        text-align: justify;
+      }
+      .noprint {
+        display: none;
+      }
+      a:after{
+        content: " (" attr(href) ")";
+      }
+    }
+  
+  
+  </style>
+  
+</head>
+<body>
+  <h1>Responsive Design: Adaptación al dispositivo</h1>
+  
+  <img src="anuncio.gif" class="noprint">
+  
+  <p>Lorem ipsum <a href="http://www.cev.com">CEV</a> dolor sit amet, consectetur adipisicing elit. Voluptatem iste adipisci, magnam recusandae incidunt hic odit velit itaque libero qui, tenetur accusantium quod nulla aperiam placeat esse labore molestiae magni.</p>
+  <p>Expedita vel <a href="http://www.madrid.org">Madrid</a> consectetur maxime qui provident rerum dicta harum voluptatem ducimus officia ipsa repellendus tempora mollitia perspiciatis rem tenetur minima consequatur iusto ipsum aliquam corporis, quisquam et unde. Minus, dolor.</p>
+  <h2>Titular de tipo h2</h2>
+  
+  <img src="madrid6.jpg" class="rodeada">
+  <p>Sed iste at odio optio sapiente rerum, tempora laborum autem, error, hic quis possimus atque illo iure reiciendis repellendus consequuntur dolores! Unde numquam praesentium quisquam voluptatem doloremque mollitia. Dolor, sunt.</p>
+  <p>Vel, nam. Ab officia, iusto fuga esse repudiandae asperiores officiis cumque quae culpa porro. Laboriosam impedit quod quia distinctio consectetur. Accusamus error quia est temporibus. Nisi voluptatum consectetur temporibus eligendi.</p>
+  <p>Quia adipisci, optio fuga esse! Repudiandae corporis tempore ea quo sed reiciendis, cumque commodi iure, facilis iusto voluptas illum similique nostrum quaerat inventore ducimus debitis aliquam officiis. Ex, quam, rem.</p>
+  <p>Ad officia laborum recusandae cupiditate quas ipsam alias, impedit soluta ab. Blanditiis ex, fugiat quia placeat amet, totam atque reprehenderit quae adipisci facilis vitae aperiam deserunt praesentium impedit, odio voluptatibus!</p>
+  
+  <p>Commodi impedit reprehenderit minus quis odio omnis sit provident. Inventore sint, odit nihil earum repudiandae molestias quos excepturi tenetur porro doloremque debitis dolore, quam voluptatem consectetur corporis dolores et repellendus.</p>
+  <h2>Titular de tipo h2</h2>
+  <p>Totam laborum voluptas quis id repellendus facilis necessitatibus velit dolorum temporibus laboriosam consequatur sed, nam distinctio illo asperiores omnis consequuntur ex aut explicabo quisquam accusantium, odit eligendi! Similique, sit, soluta!</p>
+  
+  <iframe class="noprint" width="560" height="315" src="https://www.youtube.com/embed/EiY5_7CdEnc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  
+  <p class="noscreen">Video: El gatito Vinagrito (https://www.youtube.com/watch?v=EiY5_7CdEnc)</p>
+  
+  <p>Possimus sit, vel praesentium obcaecati repellat dolore illum reprehenderit quia nostrum expedita placeat reiciendis voluptatum ducimus esse enim beatae rerum libero eaque, modi dignissimos aut. Id, laborum aspernatur praesentium delectus.</p>
+  <p>Dolorem perspiciatis, perferendis dolorum omnis saepe facilis sit inventore vero sapiente sint sed aliquid possimus animi odio rem illum hic! Dolorem placeat nostrum quos perspiciatis non tempora perferendis? Adipisci, quibusdam.</p>
+  <p>Fuga fugit rerum qui, aspernatur adipisci minus amet, voluptatem harum tenetur nam officia distinctio ex molestias sequi odio in error consectetur autem animi natus placeat. Magni optio amet esse, eum!</p>
+  <p>Voluptas libero alias voluptatibus sapiente necessitatibus natus ad, magni sed. Autem dolores iste quae dolor animi aliquid, saepe, enim voluptate provident totam aut delectus. Adipisci mollitia provident cum odit enim?</p>
+  
+  
+  
+  
+</body>
+</html>

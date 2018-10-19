@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Visibilidad JS</title>
+</head>
+<body>
+  <h1>Visibilidad con JavaScript</h1>
+  
+  
+  <form action="http://richart.pe.hu/mostrar.php" method="post">
+  Aficiones: <br>
+    <label><input type="checkbox" name="cine"> Cine </label><br>
+    <label><input type="checkbox" name="musica"> Música </label><br>
+    <label><input type="checkbox" name="literatura"> Literatura </label><br>
+    <label><input type="checkbox" name="otros"
+     onclick="document.getElementById('cuales').hidden=!this.checked"
+    > Otros </label>
+    <span id="cuales" hidden>
+    (indique cuales) <input type="text" name="cuales">
+    </span>
+    
+    <br>
+    <input type="submit" >
+    
+  </form>
+  
+  
+</body>
+</html>

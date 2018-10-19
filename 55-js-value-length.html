@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Length del value</title>
+  
+  <script>
+    function medir(campo){
+      if(campo.value.length < 6 || campo.value.length > 10){
+        alert('Debes introducir 6 a 10 caracteres');
+        campo.focus();
+      }
+    }
+  </script>
+  
+</head>
+<body>
+  <h1>Length del value</h1>
+  
+  <form action="http://richart.pe.hu/mostrar.php" method="post" >
+    
+    Nombre <input type="text" name="nombre" ><br>
+    
+    Clave <input type="tel" name="telefono" onchange="medir(this)"> (6 a 10 caracteres)<br>
+    
+    <input type="submit" >
+        
+  </form>
+  
+  
+  
+</body>
+</html>

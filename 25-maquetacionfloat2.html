@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flujo de cajas</title>
+    <style>
+        main{
+            
+            background: tomato;
+            overflow: auto;
+            margin: 20px auto;
+            width: 1240px;
+            
+        }
+        div{
+            background: orange;
+            margin: 20px;
+            font: 4rem 'Impact', sans-serif;
+            color: white;
+            text-align: center;
+            
+        }
+        
+        #a, #f{
+            width: 1200px;
+            height: 250px;
+            float: left;
+        }
+        #izq{
+            width: 800px;
+            float: left;
+            outline: 2px dotted black;
+        }
+        #der{
+            width: 400px;
+            float: left;
+            outline: 2px dotted black;
+        }
+        #b,#c{
+            height: 350px;
+        }
+        #d,#e{
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+   <h1 align="center">Flujo de cajas</h1>
+   <main>
+   <article id="izq">
+   <div id="b">B</div>
+   <div id="c">C</div>
+   </article>
+   <article id="der">
+   <div id="d">D</div>
+   <div id="e">E</div>
+   </article>
+   <div id="f">F</div>
+   
+   </main>
+</body>
+<footer>
+    kjasgfjgasfgafjgasfkjgas
+</footer>
+</html>

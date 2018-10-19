@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectores de JavaScript</title>
+</head>
+<body>
+   <h1 id="titular">Slectores de JavaScript</h1>
+    <input type="button" value="Colorear" onclick="document.getElementById('titular').style.color='red';">
+    
+    <input type="button" value="Colorear"
+    onclick="titular.style.color='red';">
+    <br>
+    <input type="button" value="Haz click"
+    onclick="this.value='¡Muy Bien!';this.disabled=true">
+    <br>
+    <p>¿Cual es la Respues correcta?</p>
+    <ol>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ea, adipisci distinctio soluta accusamus deleniti. Eligendi ipsa maxime similique omnis quae, amet est, quia, suscipit earum dicta laudantium rem sit!</li>
+        <li>Adipisci eveniet fuga quis quisquam, enim eligendi non quia commodi quaerat architecto atque illum itaque tenetur, rerum doloribus? In perspiciatis facilis alias neque, tempore odit inventore, eos reprehenderit consequatur explicabo?</li>
+        <li>Excepturi, officia, dolor? Incidunt neque dolores quis suscipit quo nisi esse, velit veritatis commodi dicta consequatur reiciendis saepe, nostrum placeat porro voluptatibus amet fugit non eligendi error inventore iste! Deleniti!</li>
+    </ol>
+    <input type="button" value="Ver Solución"
+    onclick="documents.querySelector('li:nth-child(2)').style.color='red';">
+    
+</body>
+</html>

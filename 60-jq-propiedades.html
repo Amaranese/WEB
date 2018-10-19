@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cambar propiedades jQuery</title>
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script>
+    $(function(){
+      
+      /* Sin evento, se ejecuta inicialmente */
+      $('a[href^="http"]').attr('target', '_blank');
+      
+      
+      /* Cambiar atributo del HTML */
+      $('img').click(function(){
+        $(this).attr('width', '100%');
+      });
+      
+      
+      /* Cambiar una propiedad de CSS */
+      $('td').click(function(){
+        $(this).css('background-color', 'orange');
+      });
+      
+      
+      /* 
+         Cambiar varias propiedades de CSS 
+         las propiedades son parametros 
+         que van con sintaxis de JS
+      */
+      $('h1').click(function(){
+        $(this).css({
+          fontSize: '3rem',
+          color: 'white', 
+          background: 'red',
+          fontFamily: 'impact'
+        });
+      });
+      
+      
+      /* Método html()  */
+      $('input').blur(function(){
+        $('#mensaje').html('Ok <img src="imagenes/ok.svg" height="20">');
+      });
+  
+      
+      
+    });  
+  </script>
+  
+  <style>
+    td {
+      background: yellow;
+      padding: 5px 15px;
+      font: 2rem sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cambar propiedades jQuery</h1>
+  
+  Direccion <input type="text"><span id="mensaje"></span>
+  
+  
+  <table>
+    <tr>
+      <td>a</td>
+      <td>b</td>
+      <td>c</td>
+      <td>d</td>
+    </tr>
+    <tr>
+      <td>e</td>
+      <td>f</td>
+      <td>g</td>
+      <td>h</td>
+    </tr>
+    <tr>
+      <td>i</td>
+      <td>j</td>
+      <td>k</td>
+      <td>l</td>
+    </tr>
+  </table>
+  
+  
+  <img src="madrid3.jpg" >
+  
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat neque in tenetur necessitatibus sunt laboriosam officia, iure asperiores nisi, voluptatibus harum ipsam ex sint animi voluptates praesentium nemo cumque commodi.</p>
+  
+  <a href="madrid1.jpg">foto1</a>
+  <br>
+  <a href="ficha.pdf">pdf</a>
+  <br>
+  <a href="http://www.madrid.org">CAM</a>
+  <br>
+  <a href="http://www.cev.com">CEV</a>
+  <br>
+  <a href="http://www.wikipedia.com">Wikipedia</a>
+  <br>
+  
+  
+  
+  
+</body>
+</html>

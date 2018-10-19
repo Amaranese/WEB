@@ -1,0 +1,77 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #369;
+	width: 1000px;
+	margin:auto;
+}
+
+ header, nav, article, footer, hgroup, figure, figcaption, aside, details, summary, address, td , th {
+	background: #D0E6FB;
+	margin: 5px;
+	padding: 5px;
+	border-radius: 5px;
+	border: solid 1px #000;
+}
+
+td, th {
+	background: #FFC;
+	text-align:center;
+}
+
+article, section {
+width: 740px;
+}
+
+aside, details {
+	width: 210px;
+	float: right;
+	clear: both;
+	background: #fff;
+}
+
+details[open]  {
+	background:#FFFFCC;
+}
+
+figure {
+	margin:auto;
+	width: 350px;
+	text-align:center;
+	background:#FFF;
+}
+
+address {
+	font-size: 10px;
+	background:#fff;
+}
+
+h1, h2, h3, h4 , h5 , h6 {color: #C30;}
+
+h1 {font-size:40px}
+h2 {font-size:20px}
+h3 {font-size:30px}
+h4 , h5 , h6 {font-size:16px}
+
+dfn, abbr {
+	border-bottom: dotted 2px;
+}
+
+[itemprop] {
+	background: #3CF; 
+}
+
+legend {  
+  font-size: 18px;
+}
+
+fieldset {box-shadow: 5px 5px 10px #bbb; }
+
+fieldset, legend{
+  background: #FFC;
+  padding: 5px 20px;
+  margin: 20px 30px;
+  border-radius: 15px ;
+  border: none;
+}
+

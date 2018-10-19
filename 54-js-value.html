@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Value de un campo</title>
+  
+  <script>
+  function validar(valor){
+    if(valor==''){
+        document.getElementById('nomb').innerHTML='<img src="imagenes/error.svg" width="20"> Debe rellenar este campo';
+      } else {
+        document.getElementById('nomb').innerHTML='<img src="imagenes/ok.svg" width="20"> Ok';
+      } 
+  }
+  </script>
+    
+</head>
+<body>
+  
+  <form action="http://richart.pe.hu/mostrar.php" method="post" >
+    
+    Nombre <input type="text" name="nombre" onchange="validar(this.value)"> <span id="nomb"></span><br>
+    
+    Teléfono <input type="tel" name="telefono"><br>
+    
+    <input type="submit" >
+        
+  </form>
+  
+  
+  
+  
+</body>
+</html>

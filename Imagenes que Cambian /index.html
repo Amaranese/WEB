@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cambiar Imagen</title>
+  
+  <script type="text/javascript">
+  
+    var image_tracker='f';
+    
+    function change(){
+      
+       var image= document.getElementById('a');
+      if(image_tracker=='f'){
+        
+      var image= document.getElementById('centro');
+        image.src="Ajja.jpg"
+      image_tracker='t';
+        
+      }else{ var image= document.getElementById('centro');
+        image.src="Liquid soul.jpg";
+           image_tracker='f';
+           }
+    }
+    
+    
+    function change2(){
+      
+        var image= document.getElementById('a');
+      if(image_tracker=='f'){
+        
+      var image= document.getElementById('centro');
+        image.src="Avalon.jpg"
+      image_tracker='t';
+        
+      }else{ var image= document.getElementById('centro');
+        image.src="Liquid soul.jpg";
+           image_tracker='f';
+           }
+    }
+  
+    
+    function change3(){
+      
+       var image= document.getElementById('a');
+      if(image_tracker=='f'){
+        
+      var image= document.getElementById('centro');
+        image.src="Liftshift.jpg"
+      image_tracker='t';
+        
+      }else{ var image= document.getElementById('centro');
+        image.src="Liquid soul.jpg";
+           image_tracker='f';
+           }
+    }
+  
+    
+    
+    
+  </script>
+  
+  <style>
+    
+    #Miniaturas{
+      background: red;
+      padding-left: 5px;
+      padding-top: 5px;
+    margin-top:10%;
+    margin-left: 90%;
+    position: fixed;}
+    
+    #Centro{position: fixed;
+    margin-left: 30%;
+    margin-top: 10%;}
+    
+  </style>
+  
+</head>
+
+<body>
+  <div id="Miniaturas">
+<img id="a" style="height: 100px; width: 100px; " onclick="change();" src="Ajja.jpg">  
+<br>
+<br>
+<br>
+<br>
+
+<img id="b" style="height: 100px;"width="100px;" onclick="change2();" src="Avalon.JPG">
+<br>
+<br>
+<br>
+<br>
+<img id="d" style="height: 100px;" width="100px;" onclick="change3();" src="Liftshift.jpg"> 
+</div>
+
+
+
+<div id="Centro">
+  <img  id="centro" src= "Liquid soul.jpg" onclick="change3();">
+</div>
+
+  <img onclick="document.getElementById('centro').src = this.src;" src="Liftshift.jpg"> 
+  
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scripts externos</title>
+
+
+    <script>
+      /* Script procedente de https://donnierock.com/2011/11/05/validar-un-dni-con-javascript/  */
+      function nif(dni) {
+        var numero
+        var letr
+        var letra
+        var expresion_regular_dni
+
+        expresion_regular_dni = /^\d{8}[a-zA-Z]$/;
+
+        if(expresion_regular_dni.test (dni) == true){
+          numero = dni.substr(0,dni.length-1);
+          letr = dni.substr(dni.length-1,1);
+          numero = numero % 23;
+          letra='TRWAGMYFPDXBNJZSQVHLCKET';
+          letra=letra.substring(numero,numero+1);
+          if (letra!=letr.toUpperCase()) {
+            document.getElementById('mensaje').innerHTML='Dni erroneo, la letra del NIF no se corresponde';
+          }else{
+            document.getElementById('mensaje').innerHTML='Dni correcto';
+          }
+        }else{
+          document.getElementById('mensaje').innerHTML='Dni erroneo, formato no válido';
+        }
+      }
+    </script>
+
+  </head>
+  <body>
+    <h1>Scripts externos</h1>
+    DNI/NIF <input type="text" id="carnet" onchange="nif(this.value)" ><span id="mensaje"></span>
+    <br>
+    telefono <input type="tel" >
+    
+    <br>
+    <br>
+    <br>
+    
+    <div>
+      <a id="widgetIFB" href="http://www.infobolsa.es/cotizacion/ibex_35">Cotización Ibex 35</a>
+
+      <script type="text/javascript" src="http://www.infobolsa.es/widgets/ticker?width=1000&amp;speed=3"></script>
+    </div>
+    
+    
+
+
+  </body>
+</html>
